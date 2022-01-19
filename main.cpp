@@ -6,7 +6,9 @@ using namespace std;
 class MyClass {
     public: void myMethod();
     public: map<char,double> hexoTabling();
-    public: void hexoCompiler(map<char,double>, char singleChar);
+    public: void hexoCompiler(map<char,double>, char number[]);
+    public: int lengthy(char number[]);
+    public: bool numberChecker(char singleChar);
 };
 
 void MyClass::myMethod() {
@@ -24,16 +26,34 @@ map<char,double> MyClass::hexoTabling() {
     return hexoTable;
 }
 
-void MyClass::hexoCompiler(map<char,double> hexoTable, char singleChar) {
+void MyClass::hexoCompiler(map<char,double> hexoTable, char number[]) {
     map<char, double> :: iterator itr;
+    for(int i = 0; i< lengthy(number; i++) {
+        if(number[lengthy(number-i] in )
+        for(itr = hexoTable.begin(); itr!=hexoTable.end(); itr++) {
+            double lazyCounter = 1;
+            lazyCounter++;
+            if (itr->first == singleChar) {
+                cout << pow(itr->second, lazyCounter);
+            }
+        }
+}
 
+int MyClass::lengthy(char number[]) {
+    int counter = 0;
+    for(int i = 0; number[i] != '\0'; i++) {
+        counter++;
+    }
+    return counter;
+}
+
+bool MyClass::numberChecker(char singleChar) {
     for(itr = hexoTable.begin(); itr!=hexoTable.end(); itr++) {
         double lazyCounter = 1;
         lazyCounter++;
         if (itr->first == singleChar) {
             cout << pow(itr->second, lazyCounter);
         }
-    }
 }
 
 
@@ -59,6 +79,8 @@ int main(int argc, char *argv[]) {
      */
     MyClass myObj;
     //myObj.myMethod();
-    myObj.hexoTabling();
-    myObj.hexoCompiler(myObj.hexoTabling(), 'D');
+    //myObj.hexoTabling();
+
+    //myObj.hexoCompiler(myObj.hexoTabling(), 'D');
+    cout << myObj.lengthy("E0");
 }
